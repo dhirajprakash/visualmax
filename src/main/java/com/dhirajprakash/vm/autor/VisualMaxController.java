@@ -23,35 +23,30 @@ public class VisualMaxController {
 	@PostMapping("/vmax/incluir")
 	@CrossOrigin
 	public ResponseEntity<?> incluirAutor(@RequestHeader("nome") String nome) {
-		// return visualMaxService.createUser(user);
 		return visualMaxService.incluirAutor(nome);
 	}
 
 	@PostMapping("/vmax/alterar")
 	@CrossOrigin
 	public ResponseEntity<?> alterarAutor(@RequestHeader("id") String id, @RequestHeader("nome") String nome) {
-		// return visualMaxService.createUser(user);
 		return visualMaxService.alterarAutor(Integer.valueOf(id), nome);
 	}
 
 	@PostMapping("/vmax/excluir")
 	@CrossOrigin
 	public ResponseEntity<?> excluirAutor(@RequestHeader("id") String id) {
-		// return visualMaxService.createUser(user);
 		return visualMaxService.excluirAutor(Integer.valueOf(id));
 	}
 
 	@PostMapping("/vmax/listar")
 	@CrossOrigin
 	public ResponseEntity<?> listarAutor(@RequestHeader("id") String id) {
-		// return visualMaxService.createUser(user);
 		return visualMaxService.listarAutor(Integer.valueOf(id));
 	}
 
 	@PostMapping("/vmax/listartodos")
 	@CrossOrigin
 	public ResponseEntity<?> listarTodosAutor() {
-		// return visualMaxService.createUser(user);
 		return visualMaxService.listarTodosAutor();
 	}
 
