@@ -8,3 +8,10 @@ URLs para teste
 
 Video explicando teste de APIs
 1.https://s3.ap-south-1.amazonaws.com/djworkvideos/visualmax/crud_demo.mp4
+
+#Corrigindo para incluir nome usando post da json seguinte
+1. http://localhost:8080/vmax/incluir-via-json
+{
+"id":1,
+"nome":"dhiraj prakash"
+}
