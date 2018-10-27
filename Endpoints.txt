@@ -1,1 +1,8 @@
 
+URLs para teste
+
+http://localhost:8080/vmax/incluir
+http://localhost:8080/vmax/alterar
+http://localhost:8080/vmax/excluir
+http://localhost:8080/vmax/listartodos
+http://localhost:8080/vmax/listar
