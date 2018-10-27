@@ -13,6 +13,12 @@ public class VisualMaxController {
 	public void setVisualMaxService(VisualMaxService visualMaxService) {
 		this.visualMaxService = visualMaxService;
 	}
+	
+	@PostMapping("/vmax/incluir-via-json")
+	@CrossOrigin
+	public ResponseEntity<?> createUser(@RequestBody Autor autor) {
+		return visualMaxService.incluirAutor(autor.getNome());
+	}
 
 	@PostMapping("/vmax/incluir")
 	@CrossOrigin
