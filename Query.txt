@@ -1,0 +1,9 @@
+CREATE DATABASE VTESTE;
+
+CREATE TABLE AUTOR (
+    ID bigserial primary key,
+    NOME varchar(50) NOT NULL
+    
+);
+
+//SQL PARA POSTGRES
