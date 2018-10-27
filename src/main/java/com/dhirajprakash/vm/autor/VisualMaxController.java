@@ -14,6 +14,15 @@ public class VisualMaxController {
 		this.visualMaxService = visualMaxService;
 	}
 	
+	/*
+	Codigo corrigido para incluir com post da json em format seguinte
+	{
+		"id":1,
+		"nome":"Dhiraj Prakash"
+		}
+	
+	*/
+	
 	@PostMapping("/vmax/incluir-via-json")
 	@CrossOrigin
 	public ResponseEntity<?> createUser(@RequestBody Autor autor) {
